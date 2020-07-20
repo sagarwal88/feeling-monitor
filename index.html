@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smileys Test</title>
+    <link rel="stylesheet" href="./smiles.css">
+    <script src="./smiles.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="title">
+            <span>Feeling Monitor</span>
+        </div>
+        <div class="smiley-container">
+            <div class="smiley">
+                <div class="imgDiv">
+                    <div id="veryhappy"></div>
+                </div>
+                <div class="percentDiv">
+                    <span id="veryhappyspan"></span>
+                </div>
+            </div>
+            <div class="smiley">
+                <div class="imgDiv">
+                    <div id="happy"></div>
+                </div>
+                <div class="percentDiv">
+                    <span id="happyspan"></span>
+                </div>
+            </div>
+            <div class="smiley">
+                <div class="imgDiv">
+                    <div id="neutral"></div>
+                </div>
+                <div class="percentDiv">
+                    <span id="neutralspan"></span>
+                </div>
+            </div>
+            <div class="smiley">
+                <div class="imgDiv">
+                    <div id="sad"></div>
+                </div>
+                <div class="percentDiv">
+                    <span id="sadspan"></span>
+                </div>
+            </div>
+            <div class="smiley">
+                <div class="imgDiv">
+                    <div id="verysad"></div>
+                </div>
+                <div class="percentDiv">
+                    <span id="verysadspan"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="inputDiv">
+        <div class="val">
+            <label for="inpVH">Very Happy</label>
+            <input type="number" name="vh" id="inpVH" min="0" max="100" value="30">
+        </div>
+        <div class="val">
+            <label for="inpVH">Happy</label>
+            <input type="number" name="h" id="inpH" min="0" max="100" value="20">
+        </div>
+        <div class="val">
+            <label for="inpVH">Neutral</label>
+            <input type="number" name="n" id="inpN" min="0" max="100" value="15">
+        </div>
+        <div class="val">
+            <label for="inpVH">Sad</label>
+            <input type="number" name="s" id="inpS" min="0" max="100" value="25">
+        </div>
+        <div class="val">
+            <label for="inpVH">Very Sad</label>
+            <input type="number" name="vs" id="inpVS" min="0" max="100" value="10">
+        </div>
+        <button onclick="plot();">Plot</button>
+    </div>
+</body>
+
+</html>

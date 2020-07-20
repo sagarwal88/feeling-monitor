@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    padding: 5px;
+}
+
+.card {
+    border: 1px red solid;
+    max-width: 25%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .title {
+    background-color: rgb(207, 207, 207);
+    padding: 2px;
+    flex-grow: 1;
+}
+
+.card .smiley-container {
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card .smiley-container .smiley {
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card .smiley-container .smiley .imgDiv {
+    width: 100%;
+    height: 100%;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .smiley-container .smiley .percentDiv {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.inputDiv {
+    border: 1px rgb(194, 162, 162) solid;
+    background-color: rgb(128, 177, 177);
+    padding: 10px;
+    max-width: 25%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.inputDiv .val {
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.inputDiv .val input {
+    flex-grow: 4;
+    max-width: 50%;
+    height: 25px;
+    padding: 5px;
+}
+
+button {
+    min-width: 100px;
+    min-height: 50px;
+    margin: 5px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.bg-H_1 {
+    width: 14px;
+    height: 14px;
+    background: url('css_sprites.png') -172px -140px;
+}
+
+.bg-H_2 {
+    width: 19px;
+    height: 19px;
+    background: url('css_sprites.png') -89px -140px;
+}
+
+.bg-H_3 {
+    width: 29px;
+    height: 29px;
+    background: url('css_sprites.png') -118px -100px;
+}
+
+.bg-H_4 {
+    width: 38px;
+    height: 38px;
+    background: url('css_sprites.png') -80px -100px;
+}
+
+.bg-H_5 {
+    width: 48px;
+    height: 48px;
+    background: url('css_sprites.png') -50px -50px;
+}
+
+.bg-N_1 {
+    width: 15px;
+    height: 15px;
+    background: url('css_sprites.png') -127px -140px;
+}
+
+.bg-N_2 {
+    width: 20px;
+    height: 20px;
+    background: url('css_sprites.png') -29px -140px;
+}
+
+.bg-N_3 {
+    width: 30px;
+    height: 30px;
+    background: url('css_sprites.png') -148px -38px;
+}
+
+.bg-N_4 {
+    width: 40px;
+    height: 40px;
+    background: url('css_sprites.png') -100px -47px;
+}
+
+.bg-N_5 {
+    width: 50px;
+    height: 50px;
+    background: url('css_sprites.png') -0 -0;
+}
+
+.bg-S_1 {
+    width: 15px;
+    height: 15px;
+    background: url('css_sprites.png') -142px -140px;
+}
+
+.bg-S_2 {
+    width: 20px;
+    height: 20px;
+    background: url('css_sprites.png') -49px -140px;
+}
+
+.bg-S_3 {
+    width: 30px;
+    height: 30px;
+    background: url('css_sprites.png') -148px -68px;
+}
+
+.bg-S_4 {
+    width: 40px;
+    height: 40px;
+    background: url('css_sprites.png') -0 -100px;
+}
+
+.bg-S_5 {
+    width: 50px;
+    height: 50px;
+    background: url('css_sprites.png') -50px -0;
+}
+
+.bg-VH_1 {
+    width: 14px;
+    height: 14px;
+    background: url('css_sprites.png') -0 -168px;
+}
+
+.bg-VH_2 {
+    width: 19px;
+    height: 19px;
+    background: url('css_sprites.png') -108px -140px;
+}
+
+.bg-VH_3 {
+    width: 29px;
+    height: 28px;
+    background: url('css_sprites.png') -0 -140px;
+}
+
+.bg-VH_4 {
+    width: 38px;
+    height: 38px;
+    background: url('css_sprites.png') -148px -0;
+}
+
+.bg-VH_5 {
+    width: 48px;
+    height: 47px;
+    background: url('css_sprites.png') -100px -0;
+}
+
+.bg-VS_1 {
+    width: 15px;
+    height: 15px;
+    background: url('css_sprites.png') -157px -140px;
+}
+
+.bg-VS_2 {
+    width: 20px;
+    height: 20px;
+    background: url('css_sprites.png') -69px -140px;
+}
+
+.bg-VS_3 {
+    width: 30px;
+    height: 30px;
+    background: url('css_sprites.png') -148px -98px;
+}
+
+.bg-VS_4 {
+    width: 40px;
+    height: 40px;
+    background: url('css_sprites.png') -40px -100px;
+}
+
+.bg-VS_5 {
+    width: 50px;
+    height: 50px;
+    background: url('css_sprites.png') -0 -50px;
+}
